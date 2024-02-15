@@ -24,6 +24,5 @@
 	let arr = [10, 324, 45, 90, 9808];
 	console.log(`Largest in given array is  ${largest(arr)}`);
 	
-// This code is contributed by Surbhi Tyagi 
 
 
