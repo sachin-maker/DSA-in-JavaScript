@@ -71,3 +71,39 @@ function removeDuplicates(){
 }
 console.log(removeDuplicates())
 
+
+//find duplicate element in array 
+
+function findDuplicates(arr) {
+    return arr.filter((item, index) => arr.indexOf(item) !== index && arr.indexOf(item) === index);
+  }
+  
+  // Example usage:
+  var array = [1, 2, 2, 3, 4, 4, 5, 1];
+  console.log(findDuplicates(array)); // Output: [2, 4, 1]
+
+
+  //find duplicate element in array without built-in function
+  function findDuplicates(arr) {
+  var seen = {};
+  var duplicates = [];
+
+  for (var i = 0; i < arr.length; i++) {
+    var item = arr[i];
+    if (seen[item]) {
+      // If the item is already in seen and not in duplicates, add it to duplicates
+      if (seen[item] === 1) {
+        duplicates.push(item);
+      }
+      seen[item]++;
+    } else {
+      seen[item] = 1;
+    }
+  }
+
+  return duplicates;
+}
+
+// Example usage:
+var array = [1, 2, 2, 3, 4, 4, 5, 1];
+console.log(findDuplicates(array)); // Output: [2, 4, 1]
