@@ -107,3 +107,35 @@ function findDuplicates(arr) {
 // Example usage:
 var array = [1, 2, 2, 3, 4, 4, 5, 1];
 console.log(findDuplicates(array)); // Output: [2, 4, 1]
+
+
+// find duplicates element in array and count duplicate element
+
+function findAndCountDuplicates(arr) {
+  var counts = {};
+  var duplicates = [];
+  
+  // Count occurrences of each element
+  for (var i = 0; i < arr.length; i++) {
+    var item = arr[i];
+    if (counts[item]) {
+      counts[item]++;
+    } else {
+      counts[item] = 1;
+    }
+  }
+
+  // Find elements that appear more than once
+  for (var key in counts) {
+    if (counts[key] > 1) {
+      duplicates.push({ element: key, count: counts[key] });
+    }
+  }
+
+  return duplicates;
+}
+
+// Example usage:
+var array = [1, 2, 2, 3, 4, 4, 5, 1];
+console.log(findAndCountDuplicates(array)); 
+// Output: [ { element: '1', count: 2 }, { element: '2', count: 2 }, { element: '4', count: 2 } ]
