@@ -1,6 +1,6 @@
 // reversed string
 // string ="India is my country"
-// output = "yrtnuoc ym si aidnI";
+// output = "yrtnuoc ym si aidnI" ;
 
 
 function reverseString(){
@@ -8,6 +8,7 @@ function reverseString(){
     let result=str.split('').reverse().join('');
     return result
 }
+
 console.log(reverseString())
 
 // Without in-built function
