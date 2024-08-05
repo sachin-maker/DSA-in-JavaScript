@@ -15,7 +15,7 @@ function removeDuplicates(){
 
 console.log(removeDuplicates())
 
-
+// ===========================================================================
 
 // Without Using In-built function
 
@@ -39,6 +39,8 @@ function removeDuplicates(){
 
 console.log(removeDuplicates())
 
+// ===========================================================================
+
 
 //Remove duplicate charcter in array
 
@@ -51,6 +53,8 @@ function removeDuplicates(){
 }
 
 console.log(removeDuplicates())
+
+// ===========================================================================
 
 // Without built in function
 
@@ -71,6 +75,8 @@ function removeDuplicates(){
 }
 console.log(removeDuplicates())
 
+// ===========================================================================
+
 
 //find duplicate element in array 
 
@@ -82,6 +88,7 @@ function findDuplicates(arr) {
   var array = [1, 2, 2, 3, 4, 4, 5, 1];
   console.log(findDuplicates(array)); // Output: [2, 4, 1]
 
+  // ===========================================================================
 
   //find duplicate element in array without built-in function
   function findDuplicates(arr) {
@@ -107,6 +114,10 @@ function findDuplicates(arr) {
 // Example usage:
 var array = [1, 2, 2, 3, 4, 4, 5, 1];
 console.log(findDuplicates(array)); // Output: [2, 4, 1]
+
+
+
+// ===========================================================================
 
 
 // find duplicates element in array and count duplicate element
