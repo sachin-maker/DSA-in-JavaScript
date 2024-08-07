@@ -5,23 +5,15 @@
 //  ****
 // *****
 
-// Number of rows for the pattern
-const rows = 5;
-
-// Loop to iterate through each row
-for (let i = 1; i <= rows; i++) {
-  let pattern = '';
-  
-  // Loop to add spaces before the '*' characters
-  for (let j = 1; j <= rows - i; j++) {
-    pattern += ' ';
-  }
-  
-  // Loop to add '*' characters in each row
-  for (let k = 1; k <= i; k++) {
-    pattern += '*';
-  }
-  
-  // Print the current row pattern
-  console.log(pattern);
+for(let i=1;i<=5;i++){
+    let pattern='';
+    for(let j=4;j>=i;j--){
+            pattern +=' '
+    }
+        for(let k=1;k<=i;k++){
+            pattern +='*';
+        }
+       
+    
+    console.log(pattern)
 }
