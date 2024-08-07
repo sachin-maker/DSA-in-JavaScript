@@ -1,19 +1,21 @@
-//  type 8
-//     *
-//    ***
-//   *****
-//  *******
-// *********
+//Type 9
+//  *********
+//   *******
+//    *****
+//     ***
+//      *
+
+
 
 for(let i=1;i<=5;i++){
     let  pattern =''
-    for(let j=4;j>=i;j--){
+    for(let j=1;j<=i;j++){
         pattern +=' '
     }
-    for(let k=1;k<=i;k++){
+    for(let k=5;k>=i;k--){
         pattern +='*'
     }
-    for(let l=2;l<=i;l++){
+    for(let l=4;l>=i;l--){
         pattern +='*'
     }
     console.log(pattern)
