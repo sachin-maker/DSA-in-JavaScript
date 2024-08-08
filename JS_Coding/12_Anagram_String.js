@@ -1,5 +1,5 @@
 // Write a function that determines if two strings are anagrams of each other 
-
+// or Given two strings. Find if one string can be formed by rearranging the letters of other string
 
 function anagram(str1, str2) {
     // Check if lengths of both strings are equal
