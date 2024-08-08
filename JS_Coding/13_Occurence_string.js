@@ -1,5 +1,6 @@
 
-//  Given a string, write a function to count the occurrences of each character in the string. 
+//  Given a string, write a function to count the occurrences of each character in the 
+// string or sentence. 
 
 
 
@@ -19,6 +20,6 @@ function countCharacterOccurrences(str) {
 }
 
 // Example usage
-const exampleString = "hello world";
+const exampleString = "hello world sachiin hello world";
 const result = countCharacterOccurrences(exampleString);
 console.log(result);
