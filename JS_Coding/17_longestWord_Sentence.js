@@ -1,26 +1,27 @@
-// Program to find longest word in a given sentence
 
+// Program to find the longest word in a given sentence
 function longestWord(str) {
-    // Initialize an empty string to store the longest word found
-    let longestWord = ''; 
 
     // Split the input string into an array of words
-    let words = str.split(' '); 
+    let words = str.split(' ');
 
-    // Iterate through the array of words
-    for (let i = 0; i < words.length; i++) {
+    // Initialize the longest word with the first word from the array
+    let longestWord = words[0];
+
+    // Iterate through the array of words starting from the second word
+    for (let i = 1; i < words.length; i++) {
         // Get the current word from the array
-        let individualWords = words[i]; 
+        let individualWords = words[i];
         
         // Check if the current word is longer than the current longest word
         if (individualWords.length > longestWord.length) {
             // If so, update the longestWord variable with the current word
-            longestWord = individualWords; 
+            longestWord = individualWords;
         }
     }
     
     // Return the longest word found in the input string
-    return longestWord; 
+    return longestWord;
 }
 
 // Example usage of the function
