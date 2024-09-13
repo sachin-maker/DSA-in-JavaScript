@@ -19,25 +19,34 @@ console.log(removeDuplicates())
 
 // Without Using In-built function
 
-function removeDuplicates(){
-    var str="priya supriya riya";
-    let seen={};
-    let result='';
-   
+function removeDuplicates() { 
+  // Initialize a string containing the input text.
+  var str = "priya supriya riya";
 
-    for(let i=0;i<str.length;i++){
-        var char =str[i];
+  // Create an empty object to track characters that have already been seen.
+  let seen = {};
 
-        if(!seen[char]){
-            seen[char]=true;
-            result +=char
-        }
-    }
-    return result;
+  // Initialize an empty string to store the result with duplicates removed.
+  let result = '';
 
+  // Iterate over each character in the string.
+  for(let i = 0; i < str.length; i++) {
+      var char = str[i]; // Get the current character.
+
+      // If the character has not been seen yet, add it to the result.
+      if (!seen[char]) {
+          seen[char] = true; // Mark the character as seen.
+          result += char; // Append the character to the result string.
+      }
+  }
+
+  // Return the final string with duplicates removed.
+  return result;
 }
 
-console.log(removeDuplicates())
+console.log(removeDuplicates()); // Output the result to the console.
+
+
 
 // ===========================================================================
 
