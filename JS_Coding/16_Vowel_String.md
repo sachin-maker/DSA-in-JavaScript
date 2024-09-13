@@ -1,4 +1,5 @@
-//find vowel in string
+## find vowel in string
+```javascript
 
 function findVowels(str) {
     const vowels = 'aeiouAEIOU';
