@@ -169,3 +169,45 @@ function findAndCountDuplicates(arr) {
 var array = [1, 2, 2, 3, 4, 4, 5, 1];
 console.log(findAndCountDuplicates(array)); 
 // Output: [ { element: '1', count: 2 }, { element: '2', count: 2 }, { element: '4', count: 2 } ]
+
+// ==========================================================================================
+
+
+// To find duplicate characters in a string or sentence and 
+// return a new string containing only those duplicate characters
+
+
+function findDuplicateCharacters(str) {
+  // Create an object to track the occurrence of each character in the string.
+  let seen = {};
+
+  // Initialize an empty string to store the duplicate characters.
+  let duplicates = '';
+
+  // Iterate over each character in the string.
+  for (let i = 0; i < str.length; i++) {
+      let char = str[i]; // Get the current character.
+
+  
+
+      // If the character has already been seen.
+      if (seen[char]) {
+          // If the character has been seen exactly once before, add it to the duplicates string.
+          if (seen[char] === 1) {
+              duplicates += char;
+          }
+          // Increment the count of the current character in the seen object.
+          seen[char]++;
+      } else {
+          // If the character is being seen for the first time, set its count to 1.
+          seen[char] = 1;
+      }
+  }
+
+  // Return the string containing duplicate characters.
+  return duplicates;
+}
+
+// Example usage:
+let sentence = "programming in javascript";
+console.log(findDuplicateCharacters(sentence)); // Output: "rgmia"
