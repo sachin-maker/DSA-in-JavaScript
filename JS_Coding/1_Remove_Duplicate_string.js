@@ -101,28 +101,38 @@ function findDuplicates(arr) {
 
   //find duplicate element in array without built-in function
   function findDuplicates(arr) {
-  var seen = {};
-  var duplicates = [];
-
-  for (var i = 0; i < arr.length; i++) {
-    var item = arr[i];
-    if (seen[item]) {
-      // If the item is already in seen and not in duplicates, add it to duplicates
-      if (seen[item] === 1) {
-        duplicates.push(item);
+    // Create an object to track the occurrence of each element in the array.
+    var seen = {};
+  
+    // Initialize an empty array to store the duplicates.
+    var duplicates = [];
+  
+    // Iterate over each element in the array.
+    for (var i = 0; i < arr.length; i++) {
+      var item = arr[i]; // Get the current element.
+  
+      // If the element has already been seen.
+      if (seen[item]) {
+        // If the element has been seen exactly once before, add it to the duplicates array.
+        if (seen[item] === 1) {
+          duplicates.push(item);
+        }
+        // Increment the count of the current element in the seen object.
+        seen[item]++;
+      } else {
+        // If the element is being seen for the first time, set its count to 1.
+        seen[item] = 1;
       }
-      seen[item]++;
-    } else {
-      seen[item] = 1;
     }
+  
+    // Return the array of duplicate elements.
+    return duplicates;
   }
-
-  return duplicates;
-}
-
-// Example usage:
-var array = [1, 2, 2, 3, 4, 4, 5, 1];
-console.log(findDuplicates(array)); // Output: [2, 4, 1]
+  
+  // Example usage:
+  var array = [1, 2, 2, 3, 4, 4, 5, 1];
+  console.log(findDuplicates(array)); // Output: [2, 4, 1]
+  
 
 
 
