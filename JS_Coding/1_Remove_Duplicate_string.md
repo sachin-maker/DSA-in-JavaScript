@@ -1,9 +1,11 @@
-//Questions 
-//Remove Duplicate Charcter from string
-//example.  Str="priya riya supriya "
-//          output="priya su"
+ 
+## Remove Duplicate Charcter from string
+```  
+    Str="priya riya supriya "
+    output="priya su"
+```
 
-
+```
 function removeDuplicates(){
     var str="priya riya supriya";
     let result=str.split('').filter((item,index,arr)=>{
@@ -14,11 +16,13 @@ function removeDuplicates(){
 }
 
 console.log(removeDuplicates())
+```
 
 // ===========================================================================
 
-// Without Using In-built function
+## Without Using In-built function
 
+```
 function removeDuplicates() { 
   // Initialize a string containing the input text.
   var str = "priya supriya riya";
@@ -45,14 +49,15 @@ function removeDuplicates() {
 }
 
 console.log(removeDuplicates()); // Output the result to the console.
-
+```
 
 
 // ===========================================================================
 
 
-//Remove duplicate charcter in array
+## Remove duplicate charcter in array
 
+```
 function removeDuplicates(){
     var arr=[1,2,3,4,3,2,7,7,8,9,8];
     let result =arr.filter((value,index,arr)=>{
@@ -62,11 +67,12 @@ function removeDuplicates(){
 }
 
 console.log(removeDuplicates())
-
+```
 // ===========================================================================
 
-// Without built in function
+## Without built in function
 
+```
 function removeDuplicates(){
     var arr=[1,2,3,4,5,5,4,3,7,8,9,9,6,44,55,66];
     var seen={};
@@ -83,12 +89,12 @@ function removeDuplicates(){
     return result ;
 }
 console.log(removeDuplicates())
-
+```
 // ===========================================================================
 
 
-//find duplicate element in array 
-
+## find duplicate element in array 
+```
 function findDuplicates(arr) {
     return arr.filter((item, index) => arr.indexOf(item) !== index && arr.indexOf(item) === index);
   }
@@ -97,9 +103,12 @@ function findDuplicates(arr) {
   var array = [1, 2, 2, 3, 4, 4, 5, 1];
   console.log(findDuplicates(array)); // Output: [2, 4, 1]
 
+```
   // ===========================================================================
 
-  //find duplicate element in array without built-in function
+  ## find duplicate element in array without built-in function
+
+  ```
   function findDuplicates(arr) {
     // Create an object to track the occurrence of each element in the array.
     var seen = {};
@@ -133,14 +142,15 @@ function findDuplicates(arr) {
   var array = [1, 2, 2, 3, 4, 4, 5, 1];
   console.log(findDuplicates(array)); // Output: [2, 4, 1]
   
-
+```
 
 
 // ===========================================================================
 
 
-// find duplicates element in array and count duplicate element
+## find duplicates element in array and count duplicate element
 
+```
 function findAndCountDuplicates(arr) {
   var counts = {};
   var duplicates = [];
@@ -170,13 +180,15 @@ var array = [1, 2, 2, 3, 4, 4, 5, 1];
 console.log(findAndCountDuplicates(array)); 
 // Output: [ { element: '1', count: 2 }, { element: '2', count: 2 }, { element: '4', count: 2 } ]
 
+```
+
 // ==========================================================================================
 
 
-// To find duplicate characters in a string or sentence and 
-// return a new string containing only those duplicate characters
+## To find duplicate characters in a string or sentence and 
+## return a new string containing only those duplicate characters
 
-
+```
 function findDuplicateCharacters(str) {
   // Create an object to track the occurrence of each character in the string.
   let seen = {};
@@ -211,3 +223,5 @@ function findDuplicateCharacters(str) {
 // Example usage:
 let sentence = "programming in javascript";
 console.log(findDuplicateCharacters(sentence)); // Output: "rgmia"
+
+```
