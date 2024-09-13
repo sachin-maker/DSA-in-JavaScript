@@ -18,3 +18,4 @@ function findVowels(str) {
 const myString = "Hello, World!";
 const result = findVowels(myString);
 console.log(result); // Output: [ 'e', 'o', 'o' ]
+```

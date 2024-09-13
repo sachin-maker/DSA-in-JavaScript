@@ -1,11 +1,11 @@
  
 ## Remove Duplicate Charcter from string
-```  
+```javascript 
     Str="priya riya supriya "
     output="priya su"
 ```
 
-```
+```javascript
 function removeDuplicates(){
     var str="priya riya supriya";
     let result=str.split('').filter((item,index,arr)=>{
@@ -22,7 +22,7 @@ console.log(removeDuplicates())
 
 ## Without Using In-built function
 
-```
+```javascript
 function removeDuplicates() { 
   // Initialize a string containing the input text.
   var str = "priya supriya riya";
@@ -57,7 +57,7 @@ console.log(removeDuplicates()); // Output the result to the console.
 
 ## Remove duplicate charcter in array
 
-```
+```javascript
 function removeDuplicates(){
     var arr=[1,2,3,4,3,2,7,7,8,9,8];
     let result =arr.filter((value,index,arr)=>{
@@ -72,7 +72,7 @@ console.log(removeDuplicates())
 
 ## Without built in function
 
-```
+```javascript
 function removeDuplicates(){
     var arr=[1,2,3,4,5,5,4,3,7,8,9,9,6,44,55,66];
     var seen={};
@@ -94,7 +94,8 @@ console.log(removeDuplicates())
 
 
 ## find duplicate element in array 
-```
+```javascript
+
 function findDuplicates(arr) {
     return arr.filter((item, index) => arr.indexOf(item) !== index && arr.indexOf(item) === index);
   }
@@ -108,7 +109,7 @@ function findDuplicates(arr) {
 
   ## find duplicate element in array without built-in function
 
-  ```
+  ```javascript
   function findDuplicates(arr) {
     // Create an object to track the occurrence of each element in the array.
     var seen = {};
@@ -150,7 +151,7 @@ function findDuplicates(arr) {
 
 ## find duplicates element in array and count duplicate element
 
-```
+```javascript
 function findAndCountDuplicates(arr) {
   var counts = {};
   var duplicates = [];
@@ -188,7 +189,7 @@ console.log(findAndCountDuplicates(array));
 ## To find duplicate characters in a string or sentence and 
 ## return a new string containing only those duplicate characters
 
-```
+```javascript
 function findDuplicateCharacters(str) {
   // Create an object to track the occurrence of each character in the string.
   let seen = {};
