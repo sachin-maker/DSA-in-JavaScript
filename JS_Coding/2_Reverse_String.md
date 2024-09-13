@@ -1,8 +1,11 @@
-// reversed string
-// string ="India is my country"
-// output = "yrtnuoc ym si aidnI" ;
+## reversed string
 
+```JS
+string ="India is my country"
+output = "yrtnuoc ym si aidnI" ;
 
+```
+```js
 function reverseString(){
     var str="hello world";
     let result=str.split('').reverse().join('');
@@ -10,9 +13,11 @@ function reverseString(){
 }
 
 console.log(reverseString())
+```
 
-// Without in-built function
+## Without in-built function
 
+```js
 function reverseString(){
     var str="hello world";
     let result='';
@@ -24,10 +29,11 @@ function reverseString(){
 }
 
 console.log(reverseString())
+```
 
+## reverse array without built in function
 
-// reverse array without built in function
-
+```js
 function reverseArray(){
     var arr=[1,2,3,4,5,6,7,8];
     let result=[];
@@ -38,5 +44,5 @@ function reverseArray(){
     return result;
 }
 console.log(reverseArray())
-
+```
 
