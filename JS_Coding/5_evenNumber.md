@@ -1,7 +1,7 @@
-//Write a JavaScript function that takes an array of numbers and returns a new
-// array with only the even numbers. 
+## Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers. 
 
 
+```js
 
 function evenArray(arr) {
     let result = [];
@@ -16,10 +16,12 @@ function evenArray(arr) {
 // Example usage
 const inputArray1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 console.log(evenArray(inputArray1));
+```
 
 
+## with in-built function
+```js
 
-// with in-built function
 function evenArray(arr) {
     return arr.filter(num => num % 2 === 0);
 }
@@ -27,4 +29,4 @@ function evenArray(arr) {
 // Example usage
 const inputArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 console.log(evenArray(inputArray));
-
+```

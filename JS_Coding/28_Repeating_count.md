@@ -1,8 +1,7 @@
-// find the maximum count of repeating characters but
-//  also to return the character itself. Here's the updated JavaScript function:
+## find the maximum count of repeating characters but also to return the character itself. Here's the updated JavaScript function:
 
 
-
+```js
 function maxRepeatingCharAndCount(str) {
     // If the input string is empty, return null character and count 0
     if (str.length === 0) return { char: null, count: 0 };
@@ -52,3 +51,5 @@ const str = "aaabbccccddee";
 const result = maxRepeatingCharAndCount(str);
 console.log(`Character: ${result.char}, Count: ${result.count}`); 
 // Output: Character: c, Count: 4
+
+```

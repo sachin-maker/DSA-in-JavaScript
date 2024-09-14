@@ -1,6 +1,6 @@
-// check given string is palindome or not
+## check given string is palindome or not
 
-
+```js
 function palindromString(str) {
     // Step 1: Normalize the string
     let cleanedStr = '';
@@ -43,3 +43,4 @@ console.log(palindromString(testString2));  // Output: true
 console.log(palindromString(testString3));  // Output: true
 console.log(palindromString(testString4));  // Output: true
 
+```

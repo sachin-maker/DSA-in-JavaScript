@@ -1,4 +1,6 @@
-// Write a function which converts string input into an object
+## Write a function which converts string input into an object
+
+```js
 
 function stringToObject(jsonString) {
     try {
@@ -13,3 +15,5 @@ function stringToObject(jsonString) {
 const inputString = '{"name": "John", "age": 30, "city": "New York"}';
 const obj = stringToObject(inputString);
 console.log(obj);  // Output: { name: 'John', age: 30, city: 'New York' }
+
+```

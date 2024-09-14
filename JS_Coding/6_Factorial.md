@@ -1,6 +1,9 @@
 
 
-// Function to calculate factorial  in recursive way
+## Function to calculate factorial  in recursive way
+
+```js
+
 function factorial(n) {
     if (n < 0) {
         return "Factorial is not defined for negative numbers.";
@@ -14,12 +17,15 @@ function factorial(n) {
 // Example usage
 const number = 5; // Change this to the number you want
 console.log(`The factorial of ${number} is ${factorial(number)}`);
-
+```
 
 // ====================================================================================
 
 
-// Function to calculate factorial iteratively
+## Function to calculate factorial iteratively
+
+```js
+
 function factorial(n) {
     if (n < 0) {
         return "Factorial is not defined for negative numbers.";
@@ -34,3 +40,4 @@ function factorial(n) {
 // Example usage
 const number1 = 5; // Change this to the number you want
 console.log(`The factorial of ${number1} is ${factorial(number1)}`);
+```

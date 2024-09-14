@@ -1,7 +1,7 @@
-// Write a function that takes an array of objects and a key, and returns a
-//  new array sorted based on the values of that key in ascending order. 
+## Write a function that takes an array of objects and a key, and returns a new array sorted based on the values of that key in ascending order. 
 
 
+```js
 
 function sortByKey(array, key) {
     // Create a shallow copy of the array to avoid mutating the original array
@@ -31,3 +31,4 @@ function sortByKey(array, key) {
   // Output the sorted array to the console
   console.log(sortedData);
   
+  ```

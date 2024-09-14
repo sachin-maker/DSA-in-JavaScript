@@ -1,6 +1,6 @@
-// Write a function that determines if two strings are anagrams of each other 
-// or Given two strings. Find if one string can be formed by rearranging the letters of other string
+## Write a function that determines if two strings are anagrams of each other or Given two strings. Find if one string can be formed by rearranging the letters of other string
 
+```js
 function anagram(str1, str2) {
     // Check if lengths of both strings are equal
     if (str1.length !== str2.length) {
@@ -20,13 +20,14 @@ var str2 = "silent";
 
 console.log(anagram(str1, str2)); // Output: true
 
+```
 
 // ====================================================================
 
-// without built in function
+## without built in function
 
 
-
+```js
 function anagram(str1, str2) {
     // Check if lengths of both strings are equal
     if (str1.length !== str2.length) {
@@ -60,3 +61,5 @@ var str1 = "listen";
 var str2 = "silent";
 
 console.log(anagram(str1, str2)); // Output: true
+
+```

@@ -1,12 +1,12 @@
-//find Missing number in array
-// To find the missing numbers in an array without being given the value of n, you can 
-// determine the range of expected numbers based on the minimum and maximum values in the array. Here's how you can do it:
+## find Missing number in array
+#### To find the missing numbers in an array without being given the value of n, you can  determine the range of expected numbers based on the minimum and maximum values in the array. Here's how you can do it:
 
 
-// Determine the Minimum and Maximum Values in the Array: This gives you the range of expected numbers.
-// Use a Set for Constant-Time Lookups: This helps in checking if a number is in the array.
-// Iterate Over the Range: Check for missing numbers within the determined range.
+*  Determine the Minimum and Maximum Values in the Array: This gives you the range of expected numbers.
+* Use a Set for Constant-Time Lookups: This helps in checking if a number is in the array.
+* Iterate Over the Range: Check for missing numbers within the determined range.
 
+```js
 
 function findMissingNumbers(arr) {
     // Create a set of all elements in the array
@@ -35,3 +35,4 @@ function findMissingNumbers(arr) {
   const missingNumbers = findMissingNumbers(arr);
   console.log(`The missing numbers are ${missingNumbers}`); // Output: The missing numbers are [3, 5, 8]
   
+  ```

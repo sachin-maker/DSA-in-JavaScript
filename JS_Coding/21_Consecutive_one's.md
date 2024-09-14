@@ -1,5 +1,6 @@
-// find the maximum count of consecutive 1s in an array, 
+## find the maximum count of consecutive 1s in an array, 
 
+```js
 
 function maxConsecutiveOnes(arr) {
     // Initialize variables to keep track of the maximum count of consecutive 1's
@@ -31,3 +32,5 @@ let arr = [1, 0, 1, 0, 1, 0, 1, 0, 1, 0];
 
 // Output the result of the function call
 console.log(maxConsecutiveOnes(arr)); // Output: 1
+
+```

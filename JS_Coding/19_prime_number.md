@@ -1,6 +1,6 @@
-// write program that given number prime or not
-// any number divided by itself and by one called prime number
+## write program that given number prime or not any number divided by itself and by one called prime number
 
+```js
 
 function isPrime(n){
     if(n < 2) return `${n} is not prime number`
@@ -13,3 +13,5 @@ function isPrime(n){
 }
 
 console.log(isPrime(9))
+
+```

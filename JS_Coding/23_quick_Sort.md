@@ -1,4 +1,5 @@
-// Quick Sort function to sort the array between indices low and high
+## Quick Sort function to sort the array between indices low and high
+```js
 function quickSort(arr, low, high) {
     if (low < high) {
         // Partition the array and get the pivot index
@@ -47,37 +48,38 @@ let low = 0;
 let high = n - 1;
 console.log(quickSort(arr, low, high)); // Output: [3, 4, 9, 11, 12, 45]
 
+```
 
 
 // ============================================================
-// To modify the Quick Sort algorithm to sort in descending order,
-//  you need to adjust the comparison logic in the partition function. Instead of placing 
-//  elements less than the pivot to the left, you'll place elements greater than the pivot to the left.
+### To modify the Quick Sort algorithm to sort in descending order, you need to adjust the comparison logic in the partition function. Instead of placing elements less than the pivot to the left, you'll place elements greater than the pivot to the left.
 
-// function partition(arr,low,high){
-//     let pivot=arr[high];
-//     let i=low-1;
+```js
+
+function partition(arr,low,high){
+    let pivot=arr[high];
+    let i=low-1;
     
-//     for(let j=low;j<high;j++){
-//         if(arr[j] > pivot ){
-//             i++;
+    for(let j=low;j<high;j++){
+        if(arr[j] > pivot ){
+            i++;
             
 
-//             let temp=arr[i];
-//             arr[i]=arr[j];
-//             arr[j]=temp;
-//         }
-//     }
+            let temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+        }
+    }
     
-//     i++;
+    i++;
 
 
-//     let temp=arr[i];
-//     arr[i]=pivot;
-//     arr[high]=temp;
+    let temp=arr[i];
+    arr[i]=pivot;
+    arr[high]=temp;
     
-//     return i;
+    return i;
     
     
-// }
-
+}
+```

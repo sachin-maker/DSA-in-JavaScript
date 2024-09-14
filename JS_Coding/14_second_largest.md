@@ -1,9 +1,10 @@
-// To find the second largest element in an array in JavaScript,
-//  you can use the following approach:
+## To find the second largest element in an array in JavaScript, you can use the following approach:
 
-// Remove duplicates from the array.
-// Sort the array in descending order.
-// Return the second element from the sorted array.
+ * Remove duplicates from the array.
+ * Sort the array in descending order.
+* Return the second element from the sorted array.
+
+```js
 
 function secondLargest(arr) {
     // Remove duplicates
@@ -25,9 +26,12 @@ function secondLargest(arr) {
 let array = [3, 5, 7, 5, 7, 8, 9];
 console.log(secondLargest(array)); // Output: 8
 
-//without built in function
+```
+
+## without built in function
 
 
+```js
 function secondLargest(arr) {
     // Check if the array has fewer than 2 elements
     if (arr.length < 2) {
@@ -63,3 +67,5 @@ function secondLargest(arr) {
 // Example usage:
 let array1 = [3, 5, 7, 5, 7, 8, 9];
 console.log(secondLargest(array1)); // Output: 8
+
+```

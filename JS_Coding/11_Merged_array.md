@@ -1,6 +1,6 @@
-//  Implement a function that takes two sorted arrays and merges 
-// them into a single sorted array without using any built-in sorting functions.
+##  Implement a function that takes two sorted arrays and merges  them into a single sorted array without using any built-in sorting functions.
 
+```js
 
 function mergeSortedArrays(arr1, arr2) {
     let mergedArray = []; // Initialize an empty array to hold the merged result
@@ -38,3 +38,5 @@ let array1 = [1, 3, 5, 7,2,22,22,33];
 let array2 = [2, 4, 6, 8];
 let result = mergeSortedArrays(array1, array2);
 console.log(result); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
+
+```

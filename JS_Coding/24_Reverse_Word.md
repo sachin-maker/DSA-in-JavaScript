@@ -1,6 +1,6 @@
-// Write a javascript function that reverses the order of words in a
-//  sentence without using the built-in reverse() method. 
+## Write a javascript function that reverses the order of words in a sentence without using the built-in reverse() method. 
 
+```js
 
 function reverseWords(sentence) {
     // Split the sentence into an array of words
@@ -26,3 +26,5 @@ function reverseWords(sentence) {
 
 // Example usage
 console.log(reverseWords('hello world')); // Outputs: 'world hello'
+
+```

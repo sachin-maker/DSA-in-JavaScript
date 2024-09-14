@@ -1,6 +1,6 @@
-//Move Zeros to end of the array
-//we can do that using two pointer algorithm
+## Move Zeros to end of the array we can do that using two pointer algorithm
 
+```js
 
 function moveZerosToEnd(arr) {
     // Initialize the left pointer to mark the position for the next non-zero element
@@ -25,3 +25,5 @@ function moveZerosToEnd(arr) {
 // Example usage:
 let arr = [0, 1, 0, 3, 12];
 console.log(moveZerosToEnd(arr)); // Output: [1, 3, 12, 0, 0]
+
+```

@@ -1,5 +1,6 @@
-// Find the smallest word in a given sentence ?
+## Find the smallest word in a given sentence ?
 
+```js
 
 function smallestWord(str) {
     // Split the input string into an array of words
@@ -29,3 +30,5 @@ let str = "Hello My Name Is Sachin Deshpande";
 
 // Print the result of the smallestWord function, which should be 'My'
 console.log(smallestWord(str));
+
+```

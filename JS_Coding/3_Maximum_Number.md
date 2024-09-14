@@ -1,5 +1,6 @@
-//find maximum number in array
+## find maximum number in array
 
+```js
 function maximumNumber() {
     // Step 1: Define the array of numbers
     var arr = [122, 11, 22, 33, 44, 222, 7, 9, 5, 555];
@@ -22,10 +23,12 @@ function maximumNumber() {
 
 // Step 7: Print the result of the function to the console
 console.log(maximumNumber());  // Should print 555
+```
 
 
-// find minimum number in array
+## find minimum number in array
 
+```js
 const numbers = [5, 3, 9, 1, 6];
 let smallest = numbers[0];
 
@@ -36,3 +39,4 @@ for (let i = 1; i < numbers.length; i++) {
 }
 
 console.log(smallest); // Output: 1
+```

@@ -1,7 +1,6 @@
-// Given an array, return an array where the each value is 
-// the product of the next two items: E.g. [3, 4, 5] -> [20,15, 12]
+## Given an array, return an array where the each value is the product of the next two items: E.g. [3, 4, 5] -> [20,15, 12]
 
-
+```js
 function productOfNextTwo(arr) {
     const result = [];
     for (let i = 0; i < arr.length; i++) {
@@ -17,3 +16,5 @@ function productOfNextTwo(arr) {
 const inputArray = [3, 4, 5];
 const outputArray = productOfNextTwo(inputArray);
 console.log(outputArray); // Output: [20, 15, 12]
+
+```

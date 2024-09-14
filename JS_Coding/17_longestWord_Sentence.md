@@ -1,5 +1,8 @@
 
-// Program to find the longest word in a given sentence
+## Program to find the longest word in a given sentence
+
+```js
+
 function longestWord(str) {
 
     // Split the input string into an array of words
@@ -29,3 +32,5 @@ let str = "Hello My Name Is Sachin Deshpande";
 
 // Print the result of the longestWord function, which should be 'Deshpande'
 console.log(longestWord(str));
+
+```

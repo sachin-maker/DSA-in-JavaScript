@@ -1,6 +1,6 @@
-// Implement a deep clone function in JavaScript that creates a copy of a 
-//nested object or array without any reference to the original. 
+## Implement a deep clone function in JavaScript that creates a copy of a nested object or array without any reference to the original. 
 
+```js 
 
 function deepClone(obj) {
     // Check if the input is null or not an object (i.e., a primitive value or null)
@@ -40,3 +40,5 @@ let clonedObject = deepClone(originalObject);
 
 console.log(clonedArray); // Output the cloned array
 console.log(clonedObject); // Output the cloned object
+
+```

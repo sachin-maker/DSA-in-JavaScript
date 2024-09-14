@@ -1,5 +1,6 @@
-// Write a JavaScript program to find the largest element in a nested array. 
+## Write a JavaScript program to find the largest element in a nested array. 
 
+```js
 
 function findLargest(arr) {
     // Initialize the largest variable to negative infinity to ensure any number will be larger
@@ -38,3 +39,4 @@ function findLargest(arr) {
   const nestedArray = [1, [2, [3, 4, [5, 6]]], 7, [8, 9]];
   console.log(findLargest(nestedArray)); // Output: 9
   
+  ```

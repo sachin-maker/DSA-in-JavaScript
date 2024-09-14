@@ -1,15 +1,15 @@
-// Create a function which will accepts two arrays arr1 and
-// arr2. The function should return true if every value in arr1
-// has its corresponding value squared in array2. The
-// frequency of values must be same.(Effecient)
-// Inputs and outputs:
-// =============
-// [1,2,3],[4,1,9] ==> true
-// [1,2,3],[1,9] ====> false
-// [1,2,1],[4,4,1] ===> false (must be same frequency)
+## Create a function which will accepts two arrays arr1 and arr2. The function should return true if every value in arr1 has its corresponding value squared in array2.
 
+### The frequency of values must be same.(Effecient)
+```js
+ Inputs and outputs:
 
+ [1,2,3],[4,1,9] ==> true
+ [1,2,3],[1,9] ====> false
+ [1,2,1],[4,4,1] ===> false (must be same frequency)
+```
 
+```js
 function isSameFrequency(arr1, arr2) {
     // Step 1: Check if the lengths of the two arrays are the same
     if (arr1.length !== arr2.length) {
@@ -57,3 +57,5 @@ console.log(isSameFrequency([1, 2, 5], [25, 4, 1])); // true
 console.log(isSameFrequency([1, 2, 3], [4, 1, 9])); // true
 console.log(isSameFrequency([1, 2, 3], [1, 9]));    // false
 console.log(isSameFrequency([1, 2, 1], [4, 4, 1])); // false
+
+```

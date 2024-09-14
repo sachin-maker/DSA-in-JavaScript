@@ -1,7 +1,6 @@
-//Write a JavaScript function that returns the Fibonacci sequence
-// up to a given number of terms.
+## Write a JavaScript function that returns the Fibonacci sequence up to a given number of terms.
 
-
+```js
 function generateFibonacci(n) {
     if (n <= 0) return [];
     if (n === 1) return [0];
@@ -19,3 +18,4 @@ function generateFibonacci(n) {
   const terms = 10;
   console.log(generateFibonacci(terms));  // Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
   
+  ```
