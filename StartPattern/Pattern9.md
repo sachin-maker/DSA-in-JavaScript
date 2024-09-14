@@ -1,10 +1,12 @@
-// Type 10
-// *
-//  *
-//   *
-//    *
-//     *
-
+## Type 10
+```js
+*
+ *
+  *
+   *
+    *
+```
+```js
 for(let i=1;i<=5;i++){
     let pattern ='';
     for(let j=1;j<=i;j++){
@@ -17,3 +19,4 @@ for(let i=1;i<=5;i++){
     }
     console.log(pattern)
 }
+```

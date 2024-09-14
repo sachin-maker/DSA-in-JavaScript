@@ -1,11 +1,13 @@
-//type 14
-// *****
-// *   *
-// *   *
-// *   *
-// *****
+## type 14
+```js
+*****
+*   *
+*   *
+*   *
+*****
+```
 
-
+```js
 for(let i=1;i<=5;i++){
     let pattern =''
     for(let j=1;j<=5;j++){
@@ -19,3 +21,4 @@ for(let i=1;i<=5;i++){
     }
     console.log(pattern)
 }
+```

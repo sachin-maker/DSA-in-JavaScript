@@ -1,10 +1,12 @@
-// type 7
-//      *
-//     * *
-//    * * *
-//   * * * *
-//  * * * * *
-
+## type 7
+```js
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+```
+```js
 for(let i=1;i<=5;i++){
 let  pattern =''
 for(let j=4;j>=i;j--){
@@ -15,3 +17,4 @@ for(let k=1;k<=i;k++){
 }
 console.log(pattern)
 }
+```
