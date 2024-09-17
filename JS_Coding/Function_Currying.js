@@ -11,7 +11,7 @@
 // So we can see a recursive behavior here. So how do we achieve this?
 // We call curried recursively until all the arguments are received.
 
-```js
+
 function curry(func) {
     function curried(...args) {
         if(args.length >= func.length) {
@@ -35,4 +35,4 @@ console.log(curried(2)(3)(4)); // 24
 console.log(curried(2,3)(4));  // 24
 console.log(curried(2,3,4));  // 24
 console.log(curried(5)(6,7)); // 210
-```
+
