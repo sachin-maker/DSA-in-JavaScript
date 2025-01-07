@@ -41,3 +41,8 @@ function factorial(n) {
 const number1 = 5; // Change this to the number you want
 console.log(`The factorial of ${number1} is ${factorial(number1)}`);
 ```
+
+
+## Can you write a memoization function for finding the Factorial of a number?
+```js
+```
