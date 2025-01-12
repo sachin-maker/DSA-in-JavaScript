@@ -226,3 +226,23 @@ let sentence = "programming in javascript";
 console.log(findDuplicateCharacters(sentence)); // Output: "rgmia"
 
 ```
+## Program to find the first occurrence of duplicate element
+```js
+function findFirstDuplicate(arr) {
+  const freq = {}; // Object to track frequency
+
+  for (let i = 0; i < arr.length; i++) {
+    if (freq[arr[i]]) {
+      return arr[i]; // Found duplicate
+    }
+    freq[arr[i]] = 1; // Mark as seen
+  }
+
+  return null; // No duplicates
+}
+
+// Example
+console.log(findFirstDuplicate([1, 2, 3, 4, 2, 5])); // Output: 2
+```
+
+
