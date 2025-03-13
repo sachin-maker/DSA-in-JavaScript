@@ -1,5 +1,3 @@
-
-
 // JavaScript program to find 
 // maximum in arr[] of size n 
 
@@ -24,5 +22,6 @@ function largest(arr) {
 let arr = [10, 324, 45, 90, 9808];
 console.log(`Largest in given array is  ${largest(arr)}`);
 
-
+// Time Complexity=O(n)
+// Space Complexity=O(1)
 
