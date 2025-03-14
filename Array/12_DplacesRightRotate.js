@@ -72,3 +72,13 @@ let arr = [1, 2, 3, 4, 5];
 let d = 2;
 let n = arr.length;
 console.log(rightRotate(arr, d, n)); // Output: [4, 5, 1, 2, 3]
+
+// Explanation (Step-by-Step):
+// Reverse the whole array: [1, 2, 3, 4, 5] → [5, 4, 3, 2, 1]
+// Reverse the first d elements: [5, 4] → [4, 5, 3, 2, 1]
+// Reverse the last n-d elements: [3, 2, 1] → [4, 5, 1, 2, 3]
+
+// Time Complexity:
+// O(N) → Each reversal is O(N), and we do it three times.
+// Space Complexity:
+// O(1) → No extra space is used (modifies the array in place).
