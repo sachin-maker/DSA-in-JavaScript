@@ -70,3 +70,6 @@ let arr = [1, 2, 3, 4, 5];
 let d = 3;
 let n = arr.length;
 console.log(leftRotate(arr, d, n)); // Output: [4, 5, 1, 2, 3]
+
+// Time Complexity: O(d)+O(n-d)+O(n) = O(2*n), where n = size of the array, d = the number of rotations. Each term corresponds to each reversal step.
+// Space Complexity: O(1) since no extra space is required.
