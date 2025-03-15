@@ -63,3 +63,6 @@ function moveZerosToEnd(arr) {
 let arr = [0, 1, 0, 3, 12];
 console.log(moveZerosToEnd(arr)); // Output: [1, 3, 12, 0, 0]
 
+// Optimized Time and Space Complexity:
+// Time Complexity: O(N) (Single pass through the array)
+// Space Complexity: O(1) (In-place swapping)
