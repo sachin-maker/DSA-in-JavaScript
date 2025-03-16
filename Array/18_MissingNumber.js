@@ -90,3 +90,34 @@ main();
 // Summation of array elements = 12
 // So, the difference will be = 15 - 12 = 3. 
 // And the missing number is also 3.
+
+
+
+// What if N is not given in interview
+
+function findMissingNumbers(arr) {
+  // Create a set of all elements in the array
+  const set = new Set(arr);
+  
+  // Determine the minimum and maximum values in the array
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
+  
+  // Create an array to hold missing numbers
+  const missingNumbers = [];
+  
+  // Iterate over the range of expected numbers
+  for (let i = min; i <= max; i++) {
+    // If the number is not in the set, add it to the missing numbers array
+    if (!set.has(i)) {
+      missingNumbers.push(i);
+    }
+  }
+  
+  return missingNumbers;
+}
+
+// Example usage
+const arr = [1, 2, 4, 6, 7, 9]; // The array with missing elements
+const missingNumbers = findMissingNumbers(arr);
+console.log(`The missing numbers are ${missingNumbers}`); // Output: The missing numbers are [3, 5, 8]
