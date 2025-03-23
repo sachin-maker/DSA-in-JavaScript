@@ -56,3 +56,5 @@ console.log(lastOccurrence([3, 4, 13, 13, 13, 20, 40], 13)); // Output: 4
 // Found 13, update result = 4, move low = 5
 
 // Loop exits, return result = 4
+
+
