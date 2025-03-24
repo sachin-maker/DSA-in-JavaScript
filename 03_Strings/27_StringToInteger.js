@@ -118,6 +118,8 @@ function myAtoi(s) {
     return result;
 }
 
+// Time Complexity: O(n) where n is string length
+// Space Complexity: O(1)
 
 
 // Stage	i	s[i]	Action	         Sign	Result
