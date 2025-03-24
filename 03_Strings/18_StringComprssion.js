@@ -1,95 +1,97 @@
 // 💡 Problem Statement:
 // Given a string, compress it by replacing consecutive repeating characters 
-// with the character followed by its frequency.
+// with the character followed by its frequency.along with that return compress string length
 // Example:
 
-// "aaabb" → "a3b2"
+// "aaabb" → "a3b2" and length of compress string is 4
 
-// "a" → "a1"
+// "a" → "a"
 
-// "aabbcc" → "a2b2c2"
+// "aabbcc" → "a2b2c2" -> length is 6
 
-// Approach 1: Brute Force (O(N²))
-// Logic:
-// Traverse the string character by character.
+// Brute Force Approach (O(n²) Time, O(n) Space)
+// Idea
+// Use a new string compressedString to store the compressed result.
 
-// For each character, count consecutive occurrences and store the result.
+// Iterate through chars and count consecutive occurrences of characters.
 
-// Append the character along with its count to the result string.
+// Append the character and its count (if greater than 1) to compressedString.
 
-function compressStringBrute(str) {
-    if (str.length === 0) return "";
+// Convert compressedString back to chars.
 
-    let result = ""; // Using string concatenation (inefficient)
+function compress(chars) {
+    let compressedString = "";
     let i = 0;
 
-    while (i < str.length) {
-        let count = 1;
+    while (i < chars.length) {
+        let char = chars[i];
+        let count = 0;
 
-        // Count consecutive occurrences of the same character
-        while (i + 1 < str.length && str[i] === str[i + 1]) {
-            count++;
+        // Count occurrences
+        while (i < chars.length && chars[i] === char) {
             i++;
+            count++;
         }
 
-        result += str[i] + count; // Concatenation (creates new string each time)
-        i++;
+        // Append to the new string
+        compressedString += char;
+        if (count > 1) {
+            compressedString += count;
+        }
     }
 
-    return result;
+    // Modify chars in-place
+    for (let j = 0; j < compressedString.length; j++) {
+        chars[j] = compressedString[j];
+    }
+
+    return [compressedString,compressedString.length];
 }
 
-// Example Usage
-console.log(compressStringBrute("aaabb")); // "a3b2"
-console.log(compressStringBrute("aabbcc")); // "a2b2c2"
-console.log(compressStringBrute("abcd")); // "a1b1c1d1"
-console.log(compressStringBrute("")); // ""
-
-// Complexity Analysis:
-// Time Complexity: O(N²) (String concatenation creates new copies each time).
-
-// Space Complexity: O(N) (Storing result).
 
 
 
-// Approach 2: Optimized (O(N)) - Using Array
-// Logic:
-// Instead of concatenating strings (which is slow), use an array to store characters.
+// Optimized Approach (O(n) Time, O(1) Space)
+// Key Optimizations
+// Instead of using an extra string, modify chars in-place using a write pointer.
 
-// Append characters and their count to the array.
+// Store character counts as separate digits when count >= 10.
 
-// Convert the array to a string at the end using .join("").
+// Use two pointers:
 
+// i → Traverses chars.
 
-function compressStringOptimized(str) {
-    if (str.length === 0) return "";
+// write → Modifies chars in-place
 
-    let result = [];
-    let i = 0;
+function compress(chars) {
+    let write = 0; // Position to write compressed characters
+    let i = 0; // Position to traverse original chars array
 
-    while (i < str.length) {
-        let count = 1;
+    while (i < chars.length) {
+        let char = chars[i];
+        let count = 0;
 
-        // Count consecutive occurrences of the same character
-        while (i + 1 < str.length && str[i] === str[i + 1]) {
-            count++;
+        // Count occurrences of chars[i]
+        while (i < chars.length && chars[i] === char) {
             i++;
+            count++;
         }
 
-        result.push(str[i], count); // Store character and count in array
-        i++;
+        // Write the character
+        chars[write] = char;
+        write++;
+
+        // Write the count if greater than 1
+        if (count > 1) {
+            let countStr = count.toString(); // Convert count to string
+            for (let digit of countStr) {
+                chars[write] = digit; // Store each digit separately
+                write++;
+            }
+        }
     }
 
-    return result.join(""); // Join array to form final string
+    return write; // New length of compressed array
 }
 
-// Example Usage
-console.log(compressStringOptimized("aaabb")); // "a3b2"
-console.log(compressStringOptimized("aabbcc")); // "a2b2c2"
-console.log(compressStringOptimized("abcd")); // "a1b1c1d1"
-console.log(compressStringOptimized("")); // ""
 
-// Complexity Analysis:
-// Time Complexity: O(N) → Efficient single pass.
-
-// Space Complexity: O(N) → Uses an array instead of slow string concatenation.
