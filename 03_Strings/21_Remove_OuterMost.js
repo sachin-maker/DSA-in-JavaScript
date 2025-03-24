@@ -27,5 +27,5 @@ console.log(removeOutermostParenthesis(str));  // Expected output: "()()()"
 
 
 
-O(n) time complexity ✅
-O(n) space complexity (since ans stores a substring of s). ✅
+// O(n) time complexity ✅
+// O(n) space complexity (since ans stores a substring of s). ✅
