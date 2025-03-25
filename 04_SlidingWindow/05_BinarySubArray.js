@@ -157,3 +157,9 @@ console.log(numSubarraysWithSum([0, 0, 0, 0, 0], 0)); // Output: 15
 
 // Space Complexity:
 // O(1): We only use a few integer variables (left, right, sum, count).
+
+
+// Approach	            Time Complexity	   Space Complexity    	Remarks
+// Brute Force	            O(N²)           	O(1)	            Too slow for large inputs
+// Prefix Sum + HashMap  	O(N)	            O(N)	            Fast but uses extra space
+// Sliding Window	        O(N)	            O(1)	            Optimal (fast & no extra space)
