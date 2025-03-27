@@ -110,7 +110,8 @@ console.log("The middle node value is: " + middleNode.data);
 ### When the linked list has an odd number of nodes, fast.next ensures that the fast pointer doesn't go past the end of the list. In this case, fast reaches the last node, and fast.next becomes null, signalling the end of the traversal.
 ### When the linked list has an even number of nodes, fast will reach the end of the list and be null, which still signifies the end of the traversal.
 
-     ```js                       
+```js     
+                  
 // Node class represents a node
 // in a linked list
 class Node {
