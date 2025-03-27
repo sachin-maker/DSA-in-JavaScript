@@ -79,3 +79,18 @@ list.append(30);
 list.print(); // Output: 10 -> 20 -> 30
 
 ```
+
+## Advantages & Disadvantages of SLL
+### ✅ Advantages:
+
+* Dynamic size (does not require pre-allocation like arrays).
+
+* Efficient insertions/deletions at the beginning (O(1)).
+
+* Uses less memory compared to doubly linked lists.
+
+### ❌ Disadvantages:
+
+* Searching is slow (O(n)) since we cannot access elements by index.
+
+* No backward traversal (unlike doubly linked lists).
