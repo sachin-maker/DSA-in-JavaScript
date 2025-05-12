@@ -59,3 +59,12 @@ console.log(s.top());   // 200
 console.log(s.pop());   // 200
 console.log(s.size());  // 1
 ```
+
+
+| Operation | Time Complexity | Explanation                                        |
+| --------- | --------------- | -------------------------------------------------- |
+| `push`    | O(1)            | Adds at end of array (simple index assignment).    |
+| `pop`     | O(1)            | Removes from end of array (just decrements index). |
+| `top`     | O(1)            | Direct access by index.                            |
+| `isEmpty` | O(1)            | Simple comparison.                                 |
+| `size`    | O(1)            | Tracked with a variable.                           |
