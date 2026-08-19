@@ -19,3 +19,83 @@ console.log(KthSmallest([], 1)); // Output: -1 (empty array case)
 
 // 🔹 Time Complexity: O(N log N) (due to sorting)
 // 🔹 Space Complexity: O(1) (modifies the array)
+
+//2nd Approch
+
+```js
+let arr = [22, 44, 11, 2, 3, 4, 5, 66, 77];
+
+function kthSmallest(arr, k) {
+    if (arr.length < k) return -1;
+
+    let sortedArr = quicksort(arr);
+
+    return sortedArr[k - 1];
+}
+
+function quicksort(arr) {
+    if (arr.length <= 1) return arr;
+
+    let pivot = arr[arr.length - 1];
+    let left = [];
+    let right = [];
+
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] < pivot) {
+            left.push(arr[i]);
+        } else {
+            right.push(arr[i]);
+        }
+    }
+
+    return [
+        ...quicksort(left),
+        pivot,
+        ...quicksort(right)
+    ];
+}
+
+console.log(kthSmallest(arr, 2)); // 3
+```
+
+### How it works
+
+For **Kth Smallest**, we sort the array in **ascending order**:
+
+```text
+[2, 3, 4, 5, 11, 22, 44, 66, 77]
+    ↑
+  k = 2
+    ↓
+    3
+```
+
+The main difference from **Kth Largest** is the partitioning:
+
+**Kth Largest:**
+
+```js
+if (arr[i] > pivot) {
+    right.push(arr[i]);
+} else {
+    left.push(arr[i]);
+}
+```
+
+**Kth Smallest:**
+
+```js
+if (arr[i] < pivot) {
+    left.push(arr[i]);
+} else {
+    right.push(arr[i]);
+}
+```
+
+So:
+
+* **Kth Smallest → ascending order → `arr[k - 1]`**
+* **Kth Largest → descending order → `arr[k - 1]`**
+
+Average time complexity: **O(n log n)**
+Worst case: **O(n²)**
