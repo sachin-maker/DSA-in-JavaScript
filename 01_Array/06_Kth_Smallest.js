@@ -22,7 +22,7 @@ console.log(KthSmallest([], 1)); // Output: -1 (empty array case)
 
 //2nd Approch
 
-```js
+
 let arr = [22, 44, 11, 2, 3, 4, 5, 66, 77];
 
 function kthSmallest(arr, k) {
@@ -56,45 +56,8 @@ function quicksort(arr) {
 }
 
 console.log(kthSmallest(arr, 2)); // 3
-```
 
-### How it works
 
-For **Kth Smallest**, we sort the array in **ascending order**:
-
-```text
-[2, 3, 4, 5, 11, 22, 44, 66, 77]
-    ↑
-  k = 2
-    ↓
-    3
-```
-
-The main difference from **Kth Largest** is the partitioning:
-
-**Kth Largest:**
-
-```js
-if (arr[i] > pivot) {
-    right.push(arr[i]);
-} else {
-    left.push(arr[i]);
-}
-```
-
-**Kth Smallest:**
-
-```js
-if (arr[i] < pivot) {
-    left.push(arr[i]);
-} else {
-    right.push(arr[i]);
-}
-```
-
-So:
-
-* **Kth Smallest → ascending order → `arr[k - 1]`**
 * **Kth Largest → descending order → `arr[k - 1]`**
 
 Average time complexity: **O(n log n)**
